@@ -1,12 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Header from './Components/Header';
+import RootNavigation from './routes/RootNavigation';
+import TabNavigator from './routes/TabNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <RootNavigation/>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
 
