@@ -8,7 +8,7 @@ import {
 } from "../Constants";
 
 //Screens
-import { Calls, Camera, Chats, Status } from "../Screens";
+import { Calls, CameraScreen, Chats, Status } from "../Screens";
 
 //Icons
 import { Fontisto } from "@expo/vector-icons";
@@ -42,7 +42,7 @@ export default function TabNavigator() {
       >
         <Tab.Screen
           name='Camera'
-          component={Camera}
+          component={CameraScreen}
           options={{
             tabBarLabel: "Camera",
             tabBarShowLabel: false,
